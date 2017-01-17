@@ -1,0 +1,19 @@
+<h2>Ask a question</h2>
+
+
+<ul>
+  {{#each model as |question|}}
+     <li>{{question.content}} by {{question.author}} in {{question.notes}}</li>
+  {{/each}}
+</ul>
+
+
+
+
+
+
+
+
+
+
+{{#link-to 'additional'}}Click here for additional information.{{/link-to}}

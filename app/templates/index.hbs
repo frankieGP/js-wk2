@@ -4,7 +4,7 @@
 <ul>
   {{#each model as |question|}}
      <li>{{question.content}} by {{question.author}} in {{question.notes}}</li>
-     {{question=question destroyQuestion="destroyQuestion"}}
+     {{edit-question question=question destroyQuestion="destroyQuestion" }}
   {{/each}}
 </ul>
 

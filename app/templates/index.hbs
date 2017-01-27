@@ -2,9 +2,8 @@
 
 
 <ul>
-  {{#each model as |question|}}
-
-     {{question-tile question=question update="update" destroyQuestion="destroyQuestion" }}
+  {{#each question as |question|}}
+     {{question-tile question=question}}
   {{/each}}
 </ul>
 
@@ -17,6 +16,3 @@
 
 
 {{#link-to 'answers'}}Click here to answer.{{/link-to}}
-
-
-<!-- {{#link-to 'additional'}}Click here for additional information.{{/link-to}} -->

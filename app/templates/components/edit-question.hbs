@@ -1,5 +1,5 @@
-{{#if updateQuestionForm}}
-  <h4>Update {{question.author}}'s {{question.content}}</h4>
+{{#if editQuestionForm}}
+  <h4>Edit {{question.author}}'s {{question.content}}</h4>
   <div>
     <form>
       <div class="form-group">
@@ -8,7 +8,7 @@
       </div>
 
       <div class="form-group">
-        <label for="author">author</label>
+        <label for="author">Author</label>
         {{input value=author id="author" placeholder=question.author}}
       </div>
 
@@ -19,11 +19,11 @@
 
 
 
-      <button {{action 'update' question}}>Save</button>
+      <button {{action 'edit' question}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'updateQuestionForm'}}>Update</button>
-  <button {{action 'delete' question}}>Delete</button>
+  <button {{action 'editQuestionForm'}}>Edit</button>
+  <!-- <button {{action 'delete' question}}>Delete</button> -->
 
 {{/if}}

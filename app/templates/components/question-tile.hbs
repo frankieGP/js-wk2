@@ -1,10 +1,16 @@
-<!-- <li>
+<li>
   {{question.content}} by {{question.author}} in {{question.notes}}
-  {{#if isQuestionShowing }}
-    <button {{action 'delete' question}}>Delete Question</button>
-  {{else}}
-    <button {{action 'questionShow'}}>Show question</button>
 
-  {{/if}}
 
-</li> -->
+  {{edit-question question=question edit="edit"}}
+
+  <button {{action 'delete' question}}>Delete Question</button>
+</li>
+
+
+<!-- {{#if isQuestionShowing }}
+  <button {{action 'delete' question}}>Delete Question</button>
+{{else}}
+  <button {{action 'questionShow'}}>Show question</button>
+
+{{/if}} -->

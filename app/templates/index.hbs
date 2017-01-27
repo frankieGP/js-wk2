@@ -1,4 +1,4 @@
-<h2>Ask a question</h2>
+<h2>Click on a question to get additional information and to submit an answer.</h2>
 
 
 <ul>
@@ -11,8 +11,19 @@
 
 
 
-
+<hr>
+<h3>Submit your question!</h3>
 {{new-question saveQuestion2="saveQuestion3"}}
 
 
-{{#link-to 'answers'}}Click here to answer.{{/link-to}}
+
+<hr>
+<!-- <ul>
+  {{#each model.questions as |answer|}}
+    <li>{{question.answercontent}} - by {{question.answerauthor}}</li>
+  {{/each}}
+</ul> -->
+
+<!-- {{new-answer saveAnswer="saveAnswer"}} -->
+
+<!-- {{#link-to 'answers'}}Click here to answer.{{/link-to}} -->

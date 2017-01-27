@@ -10,5 +10,12 @@
     "content": "Who painted the Mona Lisa?",
     "author": "Sue",
     "notes": "Art"
+  }],
+  "answers": [{
+    "answerauthor": "Andrea",
+    "answercontent": "Because"
+  }, {
+    "author": "Alex",
+    "answercontent": "idk"
   }]
 }

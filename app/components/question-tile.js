@@ -1,12 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  editQuestionForm: false,
+  updateQuestionForm: false,
 
   actions: {
 
-    edit(question, params) {
-      this.sendAction('edit', question, params);
+    update(question, params) {
+      this.sendAction('update', question, params);
     },
     delete(question) {
       if (confirm('Are you sure you want to delete this question?')) {

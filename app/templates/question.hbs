@@ -1,7 +1,16 @@
 <h2>More information about {{model.author}}'s question: {{model.content}}</h2>
 
+<hr>
 {{update-question question=model update="update"}}
-
+<br>
 {{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
+<br>
+<br>
+
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>  {{answer.answercontent}}  by {{answer.answerauthor}}</li>
+  {{/each}}
+</ul>
 
 {{new-answer saveAnswer="saveAnswer" answer=model}}

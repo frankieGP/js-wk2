@@ -1,3 +1,12 @@
 <li>{{answer.answercontent}}   - by {{answer.answerauthor}}</li>
-
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.answerauthor}} from {{answer.answercontent}}</li>
+  {{/each}}
+</ul>
+<ul>
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
+  {{/each}}
+</ul>
 <button {{action 'delete' answer}}>Delete Answer</button>
